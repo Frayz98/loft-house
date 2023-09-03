@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="./libs/youtubeLightbox/youtubeLightbox.css" />
+        <title>LoftHouse</title>
+    </head>
+    <body>
+        @@include('components/header.html')
+        <main class="main">
+            @@include('components/benefits.html')
+            @@include('components/apartments.html')
+            @@include('components/cta.html')
+            @@include('components/video.html')
+            @@include('components/map.html')
+            @@include('components/feedback.html')
+        </main>
+        @@include('components/footer.html')
+
+        <div id="youtubelightbox" class="youtubelightbox">
+            <div class="youtubelightbox__centeredchild">
+                <div class="youtubelightbox__videowrapper">
+                    <div id="youtubelightboxPlayer"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=d79bbce6-99f0-4119-bf1c-b1eadb106984&lang=ru_RU" type="text/javascript">
+        </script>
+
+        <script src="./libs/phoneMask/mask.js"></script>
+        <script src="./libs/phoneMask/mask_list.js"></script>
+
+        <script src="./libs/youtubeLightbox/youtubeLightbox.js"></script>
+
+        <script src="./js/index.bundle.js"></script>
+    </body>
+</html>
